@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Augustas, Mariukas, Vainius">
+    <meta name="theme-color" content="#000000">
+
+    <meta name="title" content="How Diet and Supplements Can Boost Your Athletic Performance">
+    <meta property="og:title" content="How Diet and Supplements Can Boost Your Athletic Performance">
+    <meta name="twitter:title" content="How Diet and Supplements Can Boost Your Athletic Performance">
+    <title>Mariukas Article</title>
+
+    <meta name="description" content="A balanced diet and key supplements like creatine and whey protein enhance athletic performance and recovery, but nutrition remains the top priority.">
+    <meta property="og:description" content="A balanced diet and key supplements like creatine and whey protein enhance athletic performance and recovery, but nutrition remains the top priority.">
+    <meta name="twitter:description" content="A balanced diet and key supplements like creatine and whey protein enhance athletic performance and recovery, but nutrition remains the top priority.">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="mariukas.ico">
+
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.18/dist/lenis.css">
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+
+<body class="bg-gray-50">
+
+    <style>
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: white;
+            transition: all 0.3s ease;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: hsla(235, 5%, 80%, 1);
+            border-radius: 99px;
+            transition: all 0.3s ease;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: hsla(235, 5%, 70%, 1);
+            transition: all 0.3s ease;
+        }
+    </style>
+
+    <script>
+        function isTouchDevice() {
+            return 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+        }
+
+        if (!isTouchDevice()) {
+            const lenis = new Lenis({
+                autoRaf: false,
+                smoothWheel: true,
+                orientation: 'vertical',
+                gestureOrientation: 'vertical',
+                lerp: 0.1,
+            });
+
+            const scrollPosition = sessionStorage.getItem('scrollPosition') || 0;
+
+            window.addEventListener('beforeunload', () => {
+                sessionStorage.setItem('scrollPosition', window.scrollY);
+            });
+
+            window.addEventListener('load', () => {
+                window.scrollTo(0, scrollPosition);
+            });
+
+            function raf(time) {
+                lenis.raf(time);
+                requestAnimationFrame(raf);
+            }
+
+            requestAnimationFrame(raf);
+
+            lenis.on('scroll', (e) => {
+                console.log(e);
+            });
+        }
+    </script>
+
+    <article class="max-w-3xl mx-auto px-4 py-12 md:py-20">
+
+        <header class="mb-8">
+            <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-4 leading-tight paragraph">
+                How Diet and Supplements Can Boost Your Athletic Performance
+            </h1>
+            <div class="text-gray-600 text-lg mb-8">
+                By Augustas, Vainius & Mariukas • March 03, 2025
+            </div>
+        </header>
+
+        <div class="mb-8 video-container">
+            <iframe class="w-full h-64 md:h-96" src="https://www.youtube.com/embed/MwqVkIlTKkE?si=MegIDQVwJ0VsZoW4" frameborder="0" allowfullscreen></iframe>
+            <p class="text-gray-600 mt-4">Interview with famous Lithuanian Paralympic medalist swimmer - Edgaras Matakas</p>
+        </div>
+
+        <div class="space-y-8">
+            <p class="paragraph text-gray-700 text-lg leading-relaxed">
+                Sports technologies have been rapidly developing these days. They are designed to assist and boost anyone’s fitness and athletic journey. Developed training techniques, technologies that prevent injuries or help you recover quicker and effective, healthy, nutritious dietary plans are what let you achieve something that people in the last century only could have dreamed of. However, I am dedicating this article to teaching my readers about the impact of a good diet, supplements in achieving your goals in sporting.
+            </p>
+
+            <img src="https://picsum.photos/1200/600" alt="Fitness and Nutrition" class="w-full h-auto my-8 image-container">
+
+            <p class="paragraph text-gray-700 text-lg leading-relaxed">
+                Most of sportsmen say, that food is the most important part in becoming an athlete. A diet that balances macronutrients is a must for any person wishing to live a fit and athletic life let alone achieveanything in your sports career. A good dietary plan makes sure that your muscles develop and grow properly and faster, don’t get an illness, and most importantly keeps your body in good shape.
+            </p>
+
+            <img src="https://picsum.photos/1200/600" alt="AI Image" class="w-full h-auto my-8 image-container">
+
+            <p class="paragraph text-gray-700 text-lg leading-relaxed">
+                A calculated ratio of macronutrients in a proper diet should look like this: 60% carbohydrates, 20% fats, and 20% protein. To describe how a diet that corresponds with this ratio should look like, we will learn about Edgaras Matakas (who is a Paralympian swimmer with multiple global titles) breakfast, lunch and dinner.
+            </p>
+
+            <p class="paragraph text-gray-700 text-lg leading-relaxed">
+                His morning starts with protein Oatmeal porridge and fruits. After morning training, he eats bananas or other fruits to recover faster. For lunch he eats salad, soup, steak and after that some protein snacks. And to end the day he eats fish for dinner. This is one of the great examples of a balanced meal plan. Thus, we can safely agree with the statement that food is the most important part when it comes to sport, and it is a must that you are eating plan is diverse and nutritious.
+            </p>
+
+            <p class="paragraph text-gray-700 text-lg leading-relaxed">
+                Supplements are products that add nutritional value to your diet. They support your health and athletic performance. The most important supplements for sportsmen are the ones that enhance their performance and supply them with protein, amino acids.
+            </p>
+
+            <p class="paragraph text-gray-700 text-lg leading-relaxed">
+                A popular example of performance enhancement supplements these days in fitness is creatine. Creatine is one of the most well researched and known supplements in the world. Creatine boosts ATP regeneration, allowing athletes to improve their performance in activities that require quick bursts of energy. Creatine has a variety of other benefits too: It improves strength and power, increases your muscle mass, speeds up your recovery, and emerging research states that it also has positive effects on your brain.
+            </p>
+
+            <p class="paragraph text-gray-700 text-lg leading-relaxed">
+                The best protein and amino acid supplements come from Whey. Whey is a byproduct of cheese that is processed, dried and turned into powder. Whey protein boosts your muscle growth and repair, boosts your post-workout recovery, is a good supplement in weight loss and most importantly it is very convenient compared to regular foods.
+            </p>
+
+            <p class="paragraph text-gray-700 text-lg leading-relaxed">
+                In general supplements are a great way for athletes to boost their fitness journey, however they aren’t a priority because most of the things supplements offer can be obtained by having a balanced diet.
+            </p>
+
+            <p class="paragraph text-gray-700 text-lg leading-relaxed">
+                In conclusion the effect that a good diet and supplements have on athletes is huge and it is a must to make sure that your body gets the necessary macros and nutrients it needs.
+            </p>
+        </div>
+    </article>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
