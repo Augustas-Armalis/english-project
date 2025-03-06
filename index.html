@@ -162,14 +162,37 @@
             <div class="flex items-center justify-between flex-col md:flex-row md:space-y-0 gap-3">
                 <p class="text-sm text-center sm:text-left">&copy; 2025 Žalgirio Sumuštinis. All rights reserved.</p>
                 <div class="flex space-x-4">
-                    <a href="https://chatgpt.com/" class="text-sm hover:underline">Rescources</a>
+                    <a href="https://chatgpt.com/" class="text-sm hover:underline" id="resourcesLink">Resources</a>
                     <a href="https://barbora.lt/produktai/zalgirio-sumustinis-su-vistiena-marinuotais-agurkais-suriu-255-g" class="text-sm hover:underline">Buy now</a>
                 </div>
             </div>
         </div>
     </footer>
 
+    <div id="resourcesBoard" class="hidden fixed top-0 left-0 w-full h-full bg-gray-800 bg-opacity-75 flex items-center justify-center z-50">
+        <div class="bg-white p-6 rounded-lg shadow-lg max-w-xs w-full">
+            <h2 class="text-xl mb-4">Resources</h2>
+            <div class="flex flex-col space-y-2">
+                <a href="https://my.clevelandclinic.org/health/treatments/17674-creatine?fbclid=IwZXh0bgNhZW0CMTEAAR3rZqL1pjSJV60EoUmVpcC7B-lXsMs6KYWmvhQr3-EuXx-JGsDfxSms1pw_aem_HpRkhVpc1VBRd-cKh7Kajg" target="_blank" class="text-blue-500 hover:underline">About Creatine and its benefits</a>
+                <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.medparkhospital.com%2Fen-US%2Flifestyles%2Fwhey-protein&h=AT0XHkJO8WNp2Lb9wp3B7YpZmB_5oWZzZs4KXPi9ssFmVqe0f27l1ZT873Pm-2WFM0Q4vuxbPxcgEtgmejN2KDrMDHByXCF8dk_vwM7tYARVdyc2VCyMFNz_HYVQsVU3DofQmg&s=1" target="_blank" class="text-blue-500 hover:underline">About Whey Protein and its benefits</a>
+                <a href="https://www.uwhealth.org/news/eating-for-peak-athletic-performance?fbclid=IwZXh0bgNhZW0CMTEAAR2_6FMastYHWFA8SR2gZF4uJszMMdXAc3a9OLRzJpmaweZQFGNR6f1MeJ8_aem_1bfOiGviI50x0_YCfsK7nA" target="_blank" class="text-blue-500 hover:underline">Eating for peak athletic performance</a>
+            </div>
+            <hr class="my-4 border-gray-300" />
+            <button id="closeBoard" class="mt-3 bg-gray-100 text-black px-6 py-3 rounded-lg w-full hover:bg-gray-200">Close</button>
+        </div>
+    </div>
+
     <script src="script.js"></script>
+    <script>
+        document.getElementById('resourcesLink').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('resourcesBoard').classList.remove('hidden');
+        });
+
+        document.getElementById('closeBoard').addEventListener('click', function() {
+            document.getElementById('resourcesBoard').classList.add('hidden');
+        });
+    </script>
 </body>
 
 </html>
